@@ -1,0 +1,23 @@
+@font-face {
+    font-family: d-HanSolo;
+    font-weight: normal;
+    font-style: normal;
+    src: url("fonts/HanSoloExpandedLaser.ttf");
+ }
+
+body{
+    font-family: 'd-HanSolo', Helvetica, sans-serif;
+    font-style: italic;
+    
+}
+
+.one{
+    font-weight: 700;
+    
+
+}
+
+.a{
+    text-decoration:solid;
+    border: 2px solid #f00;
+}
