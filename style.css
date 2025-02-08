@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container{
-    max-width: 1140px;
+    max-width: 1170px;
 
     margin: 0 auto;
 
@@ -80,14 +80,6 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-.header__logo {
-
-}
-
-.header__nav {
-
-}
-
 .header__list {
     display: flex;
     gap: 30px;
@@ -108,9 +100,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-.main {
-
-}
 
 /* Приветсвенная секция */
 .weclome {
@@ -189,3 +178,278 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0.7;
 }
 
+/* Список еды */
+.order {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+
+.order .container {
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
+.order__text {
+    width: 371px;
+    height: 214px;
+}
+
+.order_tittle {
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+
+.order__desc {
+    opacity: 0.7;
+    margin-top: 15px;
+}
+
+.order__price {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+    margin-top: 13px;
+}
+
+.order__old-price {
+    font-size: 16px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    color:#F6762C;
+}
+
+.order__price + .order__price{
+    margin-left: 3px;
+}
+
+.order .btn {
+    margin-top: 10px;
+}
+
+.product {
+    padding: 150px 0;
+}
+
+.product .container{
+    display: flex;
+    flex-wrap:wrap;
+
+    gap: 30px;
+    justify-content: center;;
+}
+ 
+.product__card {
+    box-sizing: border-box;
+
+    width: 555px;
+    min-height: 300px;
+
+    padding: 60px 30px 60px 290px;
+    background-color: #4b3a3a;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product__card:nth-child(even){
+    padding-left: 30px;
+    padding-right: 290px;
+}
+
+.product__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product__desc {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.product__price + .product__price{
+    margin-left: 10px;
+}
+
+.product__price {
+    font-weight: 500px;
+    letter-spacing: 0.1em;
+    color:#F6762C;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    color:#F6762C;
+    opacity: 0.5;
+}
+
+.btn--small {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.product .btn{
+    margin-top: 10px;
+}
+
+.card-queen{
+    background-image: url(./images//product-1.jpg);
+}
+.card-hut{
+    background-image: url(./images//product-2.jpg);
+}
+.card-king{
+    background-image: url(./images//product-3.jpg);
+}
+.card-papa {
+    background-image: url(./images//product-4.jpg);
+}
+
+
+
+/* Feedback */
+.feedback {
+    padding-bottom: 200px;
+}
+
+.feedback .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 880px;
+}
+
+
+
+.feedback__text {
+    margin: 0;
+    text-align: center;
+    width: 370px;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.feedback__text::before{
+    content: url("./images/icons/quote.svg");
+}
+
+.feedback__desc {
+    opacity: 0.7;
+    margin: 30px 0;
+}
+
+.deefback__author {
+    font-weight: 500;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.feedback__subauthor {
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+/* Download */
+
+.download {
+    padding: 60px 0;
+    background: #312F30;
+}
+
+.download .container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.download__title {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+/* FOOTER */
+.footer {
+    padding: 120px 0;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "contacts nav socials";
+}
+
+.footer a{
+    font-size: 12px;
+    color: rgba(255,255,255, 0.8);
+    transition: color 0.3s;
+}
+
+.footer .footer__title {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__list-item + .footer__list-item{
+    margin-top: 15px;
+}
+
+.footer__socials-link + .footer__socials-link{
+margin-left: 7px;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__logo{
+    display: inline-block;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.footer__link{
+    display: flex; 
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__link + .footer__link{
+    margin-top: 10px;
+}
+
+.footer__link-web::before{
+    content: url("./images/icons/global.svg");
+    width: 12px;
+    height: 12px;
+}
+
+.footer__link-mail::before{
+    content: url("./images/icons/mail.svg");
+    width: 12px;
+    height: 12px;
+}
+
+.footer a:hover{
+    color: rgba(255,255,255, 0.9)
+}
